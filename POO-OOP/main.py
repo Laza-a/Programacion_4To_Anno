@@ -11,13 +11,13 @@ while True:
     opcion=int(input("""                          1-ingresar personaje
                          2-correr carrera
                          3-mostrar datos
-                         4-salir"""))
+                         4-salir   """))
     if opcion == 1:
-        nombre = str(input("¿Cual es el nombre de tu personaje?"))
-        altura = float(input("¿Cual es la altura de tu personaje en metros?"))
-        velocidad = int(input("¿Cual es la velocidad de tu personaje? del 1 - 100"))
-        resistencia =int(input("¿Cual es la resistencia de tu personaje? del 1 - 100"))
-        fuerza =int(input("¿Cual es la fuerza de tu personaje? del 1 - 100"))
+        nombre = str(input("¿Cual es el nombre de tu personaje?  "))
+        altura = float(input("¿Cual es la altura de tu personaje en metros?  "))
+        velocidad = int(input("¿Cual es la velocidad de tu personaje? del 1 - 100  "))
+        resistencia =int(input("¿Cual es la resistencia de tu personaje? del 1 - 100 "))
+        fuerza =int(input("¿Cual es la fuerza de tu personaje? del 1 - 100 "))
         personaje = Personaje(True,velocidad,fuerza,resistencia,altura,nombre)
         print("Personaje" ,personaje.nombre,"creado" )
         personajes.append(personaje)
