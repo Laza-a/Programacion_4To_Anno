@@ -1,7 +1,7 @@
 # Clase padre: SavingsAccount
 class SavingsAccount:
-    def __init__(self, holder_name, balance):
-        self.holder_name = holder_name
+    def __init__(self, name, balance):
+        self.name = name
         self.__balance = balance
 
     # Getter
@@ -13,14 +13,14 @@ class SavingsAccount:
 class PremiumSavings(SavingsAccount):
     def show_details(self):
         print("\n--- Premium Savings Account ---")
-        print("Holder:", self.holder_name)
+        print("Holder:", self.name)
         print("Balance:", self.get_balance())
 
 
 # Clase padre: CheckingAccount
 class CheckingAccount:
-    def __init__(self, holder_name, balance):
-        self.holder_name = holder_name
+    def __init__(self, name, balance):
+        self.name = name
         self.__balance = balance
 
     # Getter
@@ -32,7 +32,7 @@ class CheckingAccount:
 class BusinessChecking(CheckingAccount):
     def show_details(self):
         print("\n--- Business Checking Account ---")
-        print("Holder:", self.holder_name)
+        print("Holder:", self.name)
         print("Balance:", self.get_balance())
 
 
